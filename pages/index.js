@@ -1,9 +1,9 @@
 import React from "react";
 import { Layout, Menu } from "antd";
 const { Content } = Layout;
-import SiderComponent from "../src/components/sider/sider";
-import HeaderComponent from "../src/components/header/header";
-import FooterComponent from "../src/components/footer/footer";
+import SiderComponent from "../src/components/sider/Sider";
+import HeaderComponent from "../src/components/header/Header";
+import FooterComponent from "../src/components/footer/Footer";
  import HomeStyleWrapper from "./home.style";
 const home = () => {
   return (
