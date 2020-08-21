@@ -1,6 +1,6 @@
 import React from "react";
 import Router from "next/router";
-
+import SiderStyleWrapper from "./sider.style.js";
 import { Layout, Menu } from "antd";
 import {
   HomeOutlined,
@@ -10,33 +10,21 @@ import {
   LoginOutlined,
 } from "@ant-design/icons";
 const { Sider } = Layout;
-const SiderStyleWrapper = styled.div`
-  .text-a {
-    color: rgba(255, 255, 255, 0.65);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  Link .text-a {
-    color: rgba(255, 255, 255, 0.65);
-    background-color: transparent;
-    text-decoration: none;
-  }
-`;
 const SiderComponent = () => {
   const goPage_history = (e) => {
-    //Router.push("/history/history");
+    Router.push("/history/history");
   };
   const goPage_profile = (e) => {
-    //Router.push("/profile/profile");
+    Router.push("/profile/profile");
   };
   const goPage_form002 = (e) => {
-    //Router.push("/form002page/form002_1");
+    Router.push("/form002page/form002_1");
   };
   const goPage_form001 = (e) => {
-    //Router.push("/form001page/form001_1");
+    Router.push("/form001page/form001_1");
   };
   const goPage_home = (e) => {
-    //Router.push("/homepage/home");
+    Router.push("/homepage/home");
   };
 
   return (
