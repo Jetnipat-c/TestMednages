@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, Menu } from "antd";
 const { Content } = Layout;
 import SiderComponent from "../src/components/sider/sider.js";
-import HeaderComponent from "../src/components/header/header.js";
+//import HeaderComponent from "../src/components/header/header.js";
 import FooterComponent from "../src/components/footer/footer.js";
  import HomeStyleWrapper from "./home.style";
 const home = () => {
@@ -12,7 +12,7 @@ const home = () => {
       <Layout>
         <SiderComponent />
         <Layout>
-          <HeaderComponent />
+          {/* <HeaderComponent /> */}
           <Content style={{ margin: "24px 16px 0" }}>
             <div
               className="site-layout-background"
