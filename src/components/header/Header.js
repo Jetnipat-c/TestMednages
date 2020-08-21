@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderStyleWrapper from "./header.style.js";
+import HeaderStyleWrapper from "./header.style";
 import { Layout } from "antd";
 const { Header } = Layout;
 const HeaderComponent = () => {
