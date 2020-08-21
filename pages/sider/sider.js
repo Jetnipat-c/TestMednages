@@ -26,7 +26,7 @@ const SiderComponent = () => {
     Router.push("/form001page/form001_1");
   };
   const goPage_home = (e) => {
-    Router.push("/homepage/home");
+    Router.push("/");
   };
 
   return (
@@ -45,7 +45,7 @@ const SiderComponent = () => {
       <SiderStyleWrapper>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item
-            key="/homepage/home"
+            key="/"
             icon={<LineChartOutlined   />}
             style={{ marginTop: "64px" }}
           >
