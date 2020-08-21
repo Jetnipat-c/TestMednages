@@ -17,7 +17,9 @@ const home = () => {
             <div
               className="site-layout-background"
               style={{ padding: 24, minHeight: "100vh" }}
-            ></div>
+            >
+              dsfdsfdsf
+            </div>
           </Content>
           <FooterComponent />
         </Layout>
