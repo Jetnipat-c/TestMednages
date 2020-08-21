@@ -9,7 +9,7 @@ const HeaderComponent = () => {
         className="site-layout-sub-header-background"
         style={{ padding: 0 }}
       >
-        <p> PSU procuremen system</p>
+        <p> Mednage</p>
       </Header>
     </HeaderStyleWrapper>
   );

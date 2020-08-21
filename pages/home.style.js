@@ -1,6 +1,15 @@
 import styled from "styled-components";
 
 const HomeStyleWrapper = styled.div`
+  .content-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    grid-gap: 1rem;
+  }
+  .content-grid-item{
+
+  }
   #components-layout-demo-responsive .logo {
     height: 32px;
     background: rgba(255, 255, 255, 0.2);

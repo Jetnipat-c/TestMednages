@@ -8,6 +8,8 @@ import {
   EditOutlined,
   OrderedListOutlined,
   LoginOutlined,
+  LineChartOutlined,
+
 } from "@ant-design/icons";
 const { Sider } = Layout;
 const SiderComponent = () => {
@@ -44,11 +46,11 @@ const SiderComponent = () => {
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item
             key="/homepage/home"
-            icon={<HomeOutlined />}
+            icon={<LineChartOutlined   />}
             style={{ marginTop: "64px" }}
           >
             <a className="text-a" onClick={goPage_home}>
-              หน้าแรก
+            Visualization
             </a>
           </Menu.Item>
 
