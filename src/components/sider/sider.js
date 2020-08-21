@@ -12,19 +12,19 @@ import {
 const { Sider } = Layout;
 const SiderComponent = () => {
   const goPage_history = (e) => {
-    Router.push("/history/history");
+    //Router.push("/history/history");
   };
   const goPage_profile = (e) => {
-    Router.push("/profile/profile");
+    //Router.push("/profile/profile");
   };
   const goPage_form002 = (e) => {
-    Router.push("/form002page/form002_1");
+    //Router.push("/form002page/form002_1");
   };
   const goPage_form001 = (e) => {
-    Router.push("/form001page/form001_1");
+    //Router.push("/form001page/form001_1");
   };
   const goPage_home = (e) => {
-    Router.push("/homepage/home");
+    //Router.push("/homepage/home");
   };
 
   return (
