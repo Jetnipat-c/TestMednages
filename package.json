@@ -10,8 +10,11 @@
     "deploy": "npm run build && npm run export"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "antd": "^4.5.4",
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.1"
   }
 }
