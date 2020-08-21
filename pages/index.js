@@ -2,8 +2,8 @@ import React from "react";
 import { Layout, Menu } from "antd";
 const { Content } = Layout;
 import SiderComponent from "../src/components/sider/Sider";
-import HeaderComponent from "../src/components/header/Header";
-import FooterComponent from "../src/components/footer/Footer";
+//import HeaderComponent from "../src/components/header/Header";
+//import FooterComponent from "../src/components/footer/Footer";
  import HomeStyleWrapper from "./home.style";
 const home = () => {
   return (
@@ -12,7 +12,7 @@ const home = () => {
       <Layout>
         <SiderComponent />
         <Layout>
-          <HeaderComponent />
+          {/* <HeaderComponent /> */}
           <Content style={{ margin: "24px 16px 0" }}>
             <div
               className="site-layout-background"
@@ -21,7 +21,7 @@ const home = () => {
               dsfdsfdsf
             </div>
           </Content>
-          <FooterComponent />
+          {/* <FooterComponent /> */}
         </Layout>
       </Layout>
     </HomeStyleWrapper>

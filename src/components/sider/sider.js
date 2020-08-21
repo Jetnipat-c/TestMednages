@@ -1,6 +1,6 @@
 import React from "react";
 import Router from "next/router";
-import SiderStyleWrapper from "./sider.style.js";
+//import SiderStyleWrapper from "./sider.style.js";
 import { Layout, Menu } from "antd";
 import {
   HomeOutlined,
@@ -10,6 +10,19 @@ import {
   LoginOutlined,
 } from "@ant-design/icons";
 const { Sider } = Layout;
+import styled from "styled-components";
+const SiderStyleWrapper = styled.div`
+  .text-a {
+    color: rgba(255, 255, 255, 0.65);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  Link .text-a {
+    color: rgba(255, 255, 255, 0.65);
+    background-color: transparent;
+    text-decoration: none;
+  }
+`;
 const SiderComponent = () => {
   const goPage_history = (e) => {
     //Router.push("/history/history");
@@ -28,6 +41,9 @@ const SiderComponent = () => {
   };
 
   return (
+    <SiderStyleWrapper>
+
+    
     <Sider
       breakpoint="lg"
       collapsedWidth="0"
@@ -78,6 +94,7 @@ const SiderComponent = () => {
         </Menu>
       </SiderStyleWrapper>
     </Sider>
+    </SiderStyleWrapper>
   );
 };
 
