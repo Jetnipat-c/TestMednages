@@ -1,15 +1,12 @@
 import React from "react";
 import Router from "next/router";
-// import { useForm } from "react-hook-form";
 import { Layout, BackTop, notification, Button } from "antd";
 const { Content } = Layout;
 import SiderComponent from "../sider/sider";
 import HeaderComponent from "../header/Header";
 import FooterComponent from "../footer/Footer";
-// import { useDispatch, useSelector } from "react-redux";
-// import { saveform001_1 } from "../../store/form001_1/form001_1Action";
 import Form001_1StyleWrapper from "./form001_1.style";
-//import Axios from "axios";
+
 const style = {
   height: 40,
   width: 40,
@@ -21,63 +18,9 @@ const style = {
   fontSize: 14,
 };
 const form001_1 = () => {
-  // เรียกใช้ dispatch
-  //const dispatch = useDispatch();
-  // เรียกใช้ค่าจากใน Store
-  //const username = useSelector((state) => state.user.user.username);
-  // initialise the hook
-  //const { register, handleSubmit, errors } = useForm();
+  
 
-  // เมื่อกดปุ่ม Submit
-  const onSubmit = (data) => {
-    console.log("data", data);
-    let error = 0;
-    // เช็คว่ามีข้อมูลใน Array หรือไม่
-    for (const [key, value] of Object.entries(data)) {
-      if (value != "") {
-        //console.log(`Have value ${key}: ${value}`);
-      } else {
-        error = error + 1;
-        //console.log(`Don't have value ${key}: ${value}`);
-      }
-    }
-    // แสดงว่าข้อมูลว่างกี่ตัว
-    //console.log(`${error}`);
-    if (error > 0) {
-      openNotificationWithIcon("warning");
-    } else {
-      openNotificationWithIcon("success");
-      // Api Post บันทึกรายการ
-      // Axios.post(`http://localhost:3000/form001/insertform001`, data)
-      //   .then((res) => {
-      //     console.log("Success");
-      //   })
-      //   .catch((res) => {
-      //     console.log("False");
-      //   });
-      // เก็บข้อมูลลงใน Redux
-      //dispatch(saveform001_1(data));
-      //dispatch({ type: "SAVE_FORM001_1", payload: data });
-    }
-  };
-  // แจ้งเตือน
-  const openNotificationWithIcon = (type) => {
-    switch (type) {
-      case "warning":
-        notification[type]({
-          message: "บันทึกรายการไม่สำเร็จ",
-          description: "โปรดกรอกข้อมูลให้ครบถ้วน",
-        });
-        break;
-      case "success":
-        notification[type]({
-          message: "บันทึกรายการสำเร็จ",
-          description: "",
-        });
-        Router.push("/form001page/form001_2");
-        break;
-    }
-  };
+  
   return (
     <Form001_1StyleWrapper>
       <title>Form001_1</title>
