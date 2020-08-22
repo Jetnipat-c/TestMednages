@@ -56,7 +56,7 @@ const SiderComponent = () => {
 
           <Menu.Item key="2" icon={<PlusSquareOutlined />}>
             <a className="text-a" onClick={goPage_form001}>
-              คำสั่งซื้อพัสดุแบบปกติ 001
+              บันทึกแบบฟอร์ม
             </a>
           </Menu.Item>
           <Menu.Item key="3" icon={<PlusSquareOutlined />}>
